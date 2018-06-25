@@ -9,6 +9,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "ng": "ng",
+    "prepare": "npm run build",
     "start": "ng serve",
     "serve": "ng serve",
     "build": "ng build",
