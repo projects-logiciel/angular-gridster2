@@ -61,10 +61,10 @@ export interface GridsterConfig {
   initCallback?: (gridster: GridsterComponentInterface) => void;
   destroyCallback?: (gridster: GridsterComponentInterface) => void;
   gridSizeChangedCallback?: (gridster: GridsterComponentInterface) => void;
-  itemChangeCallback?: (item: GridsterItem, itemComponent: GridsterItemComponentInterface, any:any) => void;
-  itemResizeCallback?: (item: GridsterItem, itemComponent: GridsterItemComponentInterface, any:any) => void;
-  itemInitCallback?: (item: GridsterItem, itemComponent: GridsterItemComponentInterface, any:any) => void;
-  itemRemovedCallback?: (item: GridsterItem, itemComponent: GridsterItemComponentInterface) => void;
+  itemChangeCallback?: (item: GridsterItem, itemComponent: GridsterItemComponentInterface, any:any=null) => void;
+  itemResizeCallback?: (item: GridsterItem, itemComponent: GridsterItemComponentInterface, any:any=null) => void;
+  itemInitCallback?: (item: GridsterItem, itemComponent: GridsterItemComponentInterface, any:any=null) => void;
+  itemRemovedCallback?: (item: GridsterItem, itemComponent: GridsterItemComponentInterface, any:any=null) => void;
   itemValidateCallback?: (item: GridsterItem) => boolean;
   draggable?: Draggable;
   resizable?: Resizable;
